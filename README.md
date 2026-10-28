@@ -1,3 +1,4 @@
+[index (4).html](https://github.com/user-attachments/files/34062744/index.4.html)
 <!doctype html>
 <html lang="en">
 <head>
@@ -341,17 +342,26 @@ a:focus-visible{outline:2px solid #2A1A14;outline-offset:3px}
 </div>
 <script>
 (function () {
-  function route() {
-    var id = location.hash.slice(1);
+  var root = document.documentElement;
+  var site = document.getElementById('site');
+  function show(id) {
     var el = id ? document.getElementById(id) : null;
-    var site = document.getElementById('site');
-    var isSite = id === 'site' || !!(el && site && site.contains(el));
-    document.documentElement.setAttribute('data-view', isSite ? 'site' : 'links');
-    if (isSite && el) { setTimeout(function () { el.scrollIntoView(); }, 0); }
+    var isSite = id === 'site' || !!(el && site.contains(el));
+    root.setAttribute('data-view', isSite ? 'site' : 'links');
+    if (isSite && el && id !== 'site') { el.scrollIntoView(); }
     else { window.scrollTo(0, 0); }
   }
-  window.addEventListener('hashchange', route);
-  route();
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest ? e.target.closest('a[href^="#"]') : null;
+    if (!a) return;
+    var h = a.getAttribute('href');
+    e.preventDefault();
+    if (!h || h.length < 2) return;
+    show(h.slice(1));
+    try { history.replaceState(null, '', h); } catch (err) {}
+  });
+  window.addEventListener('hashchange', function () { show(location.hash.slice(1)); });
+  show(location.hash.slice(1));
 })();
 </script>
 </body>
