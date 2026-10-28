@@ -1,5 +1,4 @@
-[links.html](https://github.com/user-attachments/files/34058707/links.html)
-<!doctype html>
+
 <html lang="en">
 <head>
 <meta charset="utf-8">
