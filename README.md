@@ -1,6 +1,3 @@
-[index (1).html](https://github.com/user-attachments/files/34057295/index.1.html)
-# ksa
-ksa
 <!doctype html>
 <html lang="en">
 <head>
