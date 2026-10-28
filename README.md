@@ -49,7 +49,7 @@ html[data-view="site"] #links{display:none}
 
     <!-- Секция Upcoming Events с фото и описанием -->
     <div class="event-card">
-      <img src="<img width="896" height="1184" alt="WhatsApp Image 2026-10-26 at 23 40 46" src="https://github.com/user-attachments/assets/921e591c-c119-4692-9839-196c03f88777" />" alt="Upcoming Event">
+      <img src="img width="896" height="1184" alt="WhatsApp Image 2026-10-26 at 23 40 46" src="https://github.com/user-attachments/assets/921e591c-c119-4692-9839-196c03f88777" alt="Upcoming Event">
       <h3>STUDENTS MEETUP</h3>
       <p>We're plannig a student meetup with games Kahoot and Jeopardy.</p>
     </div>
