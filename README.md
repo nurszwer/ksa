@@ -1,4 +1,4 @@
-[index (3).html](https://github.com/user-attachments/files/34153890/index.3.html)
+[index (7).html](https://github.com/user-attachments/files/34154193/index.7.html)
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,6 +11,18 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@600;700;800&display=swap">
 <style>
+#kcal .kgrid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px}
+#kcal .kh{text-align:center;font-size:12px;font-weight:700;color:#E9CFC4;padding:4px 0}
+#kcal .kc{min-height:72px;background:#5A0A0E;border-radius:10px;padding:8px;display:flex;flex-direction:column;gap:4px;color:#FBF3E8;min-width:0}
+#kcal .kc.off{background:transparent;color:rgba(233,207,196,.35)}
+#kcal .kc .kn{font-size:13px;font-weight:700}
+#kcal .kc.ev{background:#F2B134;color:#5A0A0E}
+#kcal .kc.ev .kt{font-size:12px;font-weight:700;line-height:1.2;overflow-wrap:anywhere}
+#kcal .ktab{font-family:'Manrope',system-ui,sans-serif;font-size:13px;font-weight:600;color:#F2B134;background:transparent;border:1px solid #F2B134;border-radius:999px;padding:8px 18px;cursor:pointer;min-height:40px}
+#kcal .ktab.on{background:#F2B134;color:#5A0A0E}
+#kcal .ktab:focus-visible{outline:2px solid #FBF3E8;outline-offset:2px}
+@media (max-width:560px){#kcal .kgrid{gap:4px}#kcal .kc{min-height:54px;padding:5px;border-radius:8px}#kcal .kc .kn{font-size:11px}#kcal .kc.ev .kt{font-size:9px}#kcal .kh{font-size:10px}}
+
 #links{min-height:100vh;display:flex;flex-direction:column;align-items:center;font-family:'Manrope',system-ui,sans-serif;color:#2A1A14}
 #links *{box-sizing:border-box}
 #links .hero{width:100%;background:#A3161C;border-radius:0 0 32px 32px;padding:48px 24px 40px;display:flex;flex-direction:column;align-items:center;gap:18px;text-align:center}
@@ -50,7 +62,6 @@ a:focus-visible{outline:2px solid #2A1A14;outline-offset:3px}
       </a>
       <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 22px; font-size: 14px; font-weight: 500">
         <a class="nv" href="#mission">Mission</a>
-        <a class="nv" href="#past">Past events</a>
         <a class="nv" href="#calendar">Calendar</a>
         <a class="nv" href="#board">Board</a>
         <a class="bt" href="#join" style="background: #A3161C; color: #FBF3E8; font-weight: 600; padding: 9px 20px; border-radius: 999px">Join</a>
@@ -98,40 +109,6 @@ a:focus-visible{outline:2px solid #2A1A14;outline-offset:3px}
     </div>
   </div>
 
-  <!-- PAST EVENTS -->
-  <div id="past" style="box-sizing: border-box; width: 100%; background: #E8D9C0">
-    <div style="box-sizing: border-box; max-width: 1100px; margin: 0 auto; padding: 72px clamp(20px, 8.4vw, 72px); display: flex; flex-direction: column; gap: 14px">
-      <span style="font-size: 12px; font-weight: 700; letter-spacing: 2px; color: #A3161C">WHAT WE’VE DONE</span>
-      <h2 style="margin: 0 0 14px; font-family: 'Unbounded', 'Manrope', sans-serif; font-weight: 800; font-size: clamp(28px, 5vw, 42px)">Past events</h2>
-      <div style="display: flex; flex-wrap: wrap; gap: 16px">
-        <div style="flex: 1 1 280px; box-sizing: border-box; background: #F3E8D8; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column">
-          <div style="height: 240px; background: #A3161C; display: flex; align-items: center; justify-content: center; color: #FBF3E8; font-size: 12px; font-weight: 500">Event photo</div>
-          <div style="padding: 20px; display: flex; flex-direction: column; gap: 8px">
-            <span style="font-size: 11px; font-weight: 700; letter-spacing: 1.5px; color: #A3161C">SPRING · [YEAR]</span>
-            <h3 style="margin: 0; font-family: 'Unbounded', 'Manrope', sans-serif; font-weight: 700; font-size: 18px">Nooruz Celebration</h3>
-            <p style="margin: 0; font-size: 14px; line-height: 1.6">Our biggest night: 200+ guests from four universities, with Rowan’s president and Kyrgyz UN representatives in attendance.</p>
-          </div>
-        </div>
-        <div style="flex: 1 1 280px; box-sizing: border-box; background: #F3E8D8; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column">
-          <div style="height: 240px; background: #C9A585; display: flex; align-items: center; justify-content: center; color: #4A1A14; font-size: 12px; font-weight: 500">Event photo</div>
-          <div style="padding: 20px; display: flex; flex-direction: column; gap: 8px">
-            <span style="font-size: 11px; font-weight: 700; letter-spacing: 1.5px; color: #A3161C">FALL · 2026</span>
-            <h3 style="margin: 0; font-family: 'Unbounded', 'Manrope', sans-serif; font-weight: 700; font-size: 18px">Welcome Freshmen</h3>
-            <p style="margin: 0; font-size: 14px; line-height: 1.6">A welcome night for new students — club intro, a Rowan survival guide and practical tips for life in America.</p>
-          </div>
-        </div>
-        <div style="flex: 1 1 280px; box-sizing: border-box; background: #F3E8D8; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column">
-          <div style="height: 240px; background: #7D0E12; display: flex; align-items: center; justify-content: center; color: #FBF3E8; font-size: 12px; font-weight: 500">Event photo</div>
-          <div style="padding: 20px; display: flex; flex-direction: column; gap: 8px">
-            <span style="font-size: 11px; font-weight: 700; letter-spacing: 1.5px; color: #A3161C">[DATE]</span>
-            <h3 style="margin: 0; font-family: 'Unbounded', 'Manrope', sans-serif; font-weight: 700; font-size: 18px">[EVENT NAME]</h3>
-            <p style="margin: 0; font-size: 14px; line-height: 1.6">[Short description of the event.]</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- UPCOMING / CALENDAR -->
   <div id="calendar" style="box-sizing: border-box; width: 100%; background: #7D0E12">
     <div style="box-sizing: border-box; max-width: 1100px; margin: 0 auto; padding: 64px clamp(20px, 8.4vw, 72px); display: flex; flex-direction: column; gap: 14px">
@@ -164,11 +141,23 @@ a:focus-visible{outline:2px solid #2A1A14;outline-offset:3px}
 
       <div style="box-sizing: border-box; background: #5A0A0E; border-radius: 14px; padding: 12px 16px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px">
         <div style="width: 46px; height: 46px; border-radius: 10px; background: #F2B134; color: #5A0A0E; display: flex; flex-direction: column; align-items: center; justify-content: center; line-height: 1.1">
-          <span style="font-size: 9px; font-weight: 700">[MON]</span>
-          <span style="font-family: 'Unbounded', 'Manrope', sans-serif; font-weight: 700; font-size: 14px">[DD]</span>
+          <span style="font-size: 9px; font-weight: 700">NOV</span>
+          <span style="font-family: 'Unbounded', 'Manrope', sans-serif; font-weight: 700; font-size: 14px">11</span>
         </div>
         <div style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 3px">
-          <span style="font-size: 17px; font-weight: 600; color: #FBF3E8">[EVENT NAME]</span>
+          <span style="font-size: 17px; font-weight: 600; color: #FBF3E8">FIFA</span>
+          <span style="font-size: 14px; color: #E9CFC4">[TIME] · [LOCATION]</span>
+        </div>
+        <a class="bt" href="#" style="border: 1px solid #F2B134; color: #F2B134; font-size: 12px; font-weight: 600; padding: 8px 18px; border-radius: 999px">RSVP</a>
+      </div>
+
+      <div style="box-sizing: border-box; background: #5A0A0E; border-radius: 14px; padding: 12px 16px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px">
+        <div style="width: 46px; height: 46px; border-radius: 10px; background: #F2B134; color: #5A0A0E; display: flex; flex-direction: column; align-items: center; justify-content: center; line-height: 1.1">
+          <span style="font-size: 9px; font-weight: 700">DEC</span>
+          <span style="font-family: 'Unbounded', 'Manrope', sans-serif; font-weight: 700; font-size: 14px">2</span>
+        </div>
+        <div style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 3px">
+          <span style="font-size: 17px; font-weight: 600; color: #FBF3E8">Karaoke Night</span>
           <span style="font-size: 14px; color: #E9CFC4">[TIME] · [LOCATION]</span>
         </div>
         <a class="bt" href="#" style="border: 1px solid #F2B134; color: #F2B134; font-size: 12px; font-weight: 600; padding: 8px 18px; border-radius: 999px">RSVP</a>
@@ -184,6 +173,17 @@ a:focus-visible{outline:2px solid #2A1A14;outline-offset:3px}
           <span style="font-size: 14px; color: #E9CFC4">[TIME] · [LOCATION]</span>
         </div>
         <a class="bt" href="#" style="border: 1px solid #F2B134; color: #F2B134; font-size: 12px; font-weight: 600; padding: 8px 18px; border-radius: 999px">RSVP</a>
+      </div>
+          <div id="kcal" style="margin-top: 28px; display: flex; flex-direction: column; gap: 16px">
+        <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px">
+          <h3 id="kttl" style="margin: 0; font-family: 'Unbounded', 'Manrope', sans-serif; font-weight: 700; font-size: 22px; color: #FBF3E8">November 2026</h3>
+          <div style="display: flex; gap: 8px">
+            <button type="button" class="ktab on" data-m="11" data-t="November 2026">Nov</button>
+            <button type="button" class="ktab" data-m="12" data-t="December 2026">Dec</button>
+          </div>
+        </div>
+        <div class="kmonth" data-month="11"><div class="kgrid"><div class="kh">Sun</div><div class="kh">Mon</div><div class="kh">Tue</div><div class="kh">Wed</div><div class="kh">Thu</div><div class="kh">Fri</div><div class="kh">Sat</div><div class="kc"><span class="kn">1</span></div><div class="kc"><span class="kn">2</span></div><div class="kc"><span class="kn">3</span></div><div class="kc"><span class="kn">4</span></div><div class="kc"><span class="kn">5</span></div><div class="kc"><span class="kn">6</span></div><div class="kc"><span class="kn">7</span></div><div class="kc"><span class="kn">8</span></div><div class="kc"><span class="kn">9</span></div><div class="kc"><span class="kn">10</span></div><div class="kc ev"><span class="kn">11</span><span class="kt">FIFA</span></div><div class="kc"><span class="kn">12</span></div><div class="kc"><span class="kn">13</span></div><div class="kc"><span class="kn">14</span></div><div class="kc"><span class="kn">15</span></div><div class="kc"><span class="kn">16</span></div><div class="kc"><span class="kn">17</span></div><div class="kc"><span class="kn">18</span></div><div class="kc"><span class="kn">19</span></div><div class="kc"><span class="kn">20</span></div><div class="kc"><span class="kn">21</span></div><div class="kc"><span class="kn">22</span></div><div class="kc"><span class="kn">23</span></div><div class="kc"><span class="kn">24</span></div><div class="kc"><span class="kn">25</span></div><div class="kc"><span class="kn">26</span></div><div class="kc"><span class="kn">27</span></div><div class="kc"><span class="kn">28</span></div><div class="kc"><span class="kn">29</span></div><div class="kc"><span class="kn">30</span></div><div class="kc off"><span class="kn">1</span></div><div class="kc off"><span class="kn">2</span></div><div class="kc off"><span class="kn">3</span></div><div class="kc off"><span class="kn">4</span></div><div class="kc off"><span class="kn">5</span></div></div></div>
+        <div class="kmonth" data-month="12" hidden><div class="kgrid"><div class="kh">Sun</div><div class="kh">Mon</div><div class="kh">Tue</div><div class="kh">Wed</div><div class="kh">Thu</div><div class="kh">Fri</div><div class="kh">Sat</div><div class="kc off"><span class="kn">29</span></div><div class="kc off"><span class="kn">30</span></div><div class="kc"><span class="kn">1</span></div><div class="kc ev"><span class="kn">2</span><span class="kt">Karaoke Night</span></div><div class="kc"><span class="kn">3</span></div><div class="kc"><span class="kn">4</span></div><div class="kc"><span class="kn">5</span></div><div class="kc"><span class="kn">6</span></div><div class="kc"><span class="kn">7</span></div><div class="kc"><span class="kn">8</span></div><div class="kc"><span class="kn">9</span></div><div class="kc"><span class="kn">10</span></div><div class="kc"><span class="kn">11</span></div><div class="kc"><span class="kn">12</span></div><div class="kc"><span class="kn">13</span></div><div class="kc"><span class="kn">14</span></div><div class="kc"><span class="kn">15</span></div><div class="kc"><span class="kn">16</span></div><div class="kc"><span class="kn">17</span></div><div class="kc"><span class="kn">18</span></div><div class="kc"><span class="kn">19</span></div><div class="kc"><span class="kn">20</span></div><div class="kc"><span class="kn">21</span></div><div class="kc"><span class="kn">22</span></div><div class="kc"><span class="kn">23</span></div><div class="kc"><span class="kn">24</span></div><div class="kc"><span class="kn">25</span></div><div class="kc"><span class="kn">26</span></div><div class="kc"><span class="kn">27</span></div><div class="kc"><span class="kn">28</span></div><div class="kc"><span class="kn">29</span></div><div class="kc"><span class="kn">30</span></div><div class="kc"><span class="kn">31</span></div><div class="kc off"><span class="kn">1</span></div><div class="kc off"><span class="kn">2</span></div></div></div>
       </div>
     </div>
   </div>
@@ -342,17 +342,42 @@ a:focus-visible{outline:2px solid #2A1A14;outline-offset:3px}
 </div>
 <script>
 (function () {
-  function route() {
-    var id = location.hash.slice(1);
+  var root = document.documentElement;
+  var site = document.getElementById('site');
+  function show(id) {
     var el = id ? document.getElementById(id) : null;
-    var site = document.getElementById('site');
-    var isSite = id === 'site' || !!(el && site && site.contains(el));
-    document.documentElement.setAttribute('data-view', isSite ? 'site' : 'links');
-    if (isSite && el) { setTimeout(function () { el.scrollIntoView(); }, 0); }
+    var isSite = id === 'site' || !!(el && site.contains(el));
+    root.setAttribute('data-view', isSite ? 'site' : 'links');
+    if (isSite && el && id !== 'site') { el.scrollIntoView(); }
     else { window.scrollTo(0, 0); }
   }
-  window.addEventListener('hashchange', route);
-  route();
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest ? e.target.closest('a[href^="#"]') : null;
+    if (!a) return;
+    var h = a.getAttribute('href');
+    e.preventDefault();
+    if (!h || h.length < 2) return;
+    show(h.slice(1));
+    try { history.replaceState(null, '', h); } catch (err) {}
+  });
+  window.addEventListener('hashchange', function () { show(location.hash.slice(1)); });
+  show(location.hash.slice(1));
+})();
+</script>
+<script>
+(function () {
+  var box = document.getElementById('kcal');
+  if (!box) return;
+  box.addEventListener('click', function (e) {
+    var b = e.target.closest ? e.target.closest('.ktab') : null;
+    if (!b) return;
+    var m = b.getAttribute('data-m');
+    var tabs = box.querySelectorAll('.ktab');
+    for (var i = 0; i < tabs.length; i++) tabs[i].className = 'ktab' + (tabs[i] === b ? ' on' : '');
+    var ms = box.querySelectorAll('.kmonth');
+    for (var j = 0; j < ms.length; j++) ms[j].hidden = ms[j].getAttribute('data-month') !== m;
+    document.getElementById('kttl').textContent = b.getAttribute('data-t');
+  });
 })();
 </script>
 </body>
