@@ -1,5 +1,3 @@
-
-<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -248,6 +246,13 @@ a:focus-visible{outline:2px solid #2A1A14;outline-offset:3px}
           <div style="aspect-ratio: 1 / 1; border-radius: 12px; background: #E2C9A5; display: flex; align-items: center; justify-content: center; color: #7D0E12; font-size: 12px">Photo</div>
           <div style="padding: 0 4px; display: flex; flex-direction: column; gap: 2px">
             <span style="font-size: 14px; font-weight: 700">Damir Orozobekov</span>
+            <span style="font-size: 12px; font-weight: 700; color: #7D0E12">Event Coordinator</span>
+          </div>
+        </div>
+        <div style="box-sizing: border-box; background: #FBF3E8; border: 1px solid #E3CFB4; border-radius: 16px; padding: 10px 10px 16px; display: flex; flex-direction: column; gap: 10px; min-width: 0">
+          <div style="aspect-ratio: 1 / 1; border-radius: 12px; background: #E2C9A5; display: flex; align-items: center; justify-content: center; color: #7D0E12; font-size: 12px">Photo</div>
+          <div style="padding: 0 4px; display: flex; flex-direction: column; gap: 2px">
+            <span style="font-size: 14px; font-weight: 700">Aitegin Kanybekov</span>
             <span style="font-size: 12px; font-weight: 700; color: #7D0E12">Event Coordinator</span>
           </div>
         </div>
