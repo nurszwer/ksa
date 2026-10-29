@@ -1,3 +1,4 @@
+[index (3).html](https://github.com/user-attachments/files/34153890/index.3.html)
 <!doctype html>
 <html lang="en">
 <head>
@@ -49,6 +50,7 @@ a:focus-visible{outline:2px solid #2A1A14;outline-offset:3px}
       </a>
       <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 22px; font-size: 14px; font-weight: 500">
         <a class="nv" href="#mission">Mission</a>
+        <a class="nv" href="#past">Past events</a>
         <a class="nv" href="#calendar">Calendar</a>
         <a class="nv" href="#board">Board</a>
         <a class="bt" href="#join" style="background: #A3161C; color: #FBF3E8; font-weight: 600; padding: 9px 20px; border-radius: 999px">Join</a>
@@ -91,6 +93,40 @@ a:focus-visible{outline:2px solid #2A1A14;outline-offset:3px}
         <div style="flex: 1 1 260px; box-sizing: border-box; background: #FBF3E8; border: 1px solid #E3CFB4; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 10px">
           <h3 style="margin: 0; font-family: 'Unbounded', 'Manrope', sans-serif; font-weight: 700; font-size: 17px; color: #A3161C">Build community</h3>
           <p style="margin: 0; font-size: 14px; line-height: 1.6">Connect Kyrgyz students across universities and with the wider Kyrgyz community in New Jersey.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAST EVENTS -->
+  <div id="past" style="box-sizing: border-box; width: 100%; background: #E8D9C0">
+    <div style="box-sizing: border-box; max-width: 1100px; margin: 0 auto; padding: 72px clamp(20px, 8.4vw, 72px); display: flex; flex-direction: column; gap: 14px">
+      <span style="font-size: 12px; font-weight: 700; letter-spacing: 2px; color: #A3161C">WHAT WE’VE DONE</span>
+      <h2 style="margin: 0 0 14px; font-family: 'Unbounded', 'Manrope', sans-serif; font-weight: 800; font-size: clamp(28px, 5vw, 42px)">Past events</h2>
+      <div style="display: flex; flex-wrap: wrap; gap: 16px">
+        <div style="flex: 1 1 280px; box-sizing: border-box; background: #F3E8D8; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column">
+          <div style="height: 240px; background: #A3161C; display: flex; align-items: center; justify-content: center; color: #FBF3E8; font-size: 12px; font-weight: 500">Event photo</div>
+          <div style="padding: 20px; display: flex; flex-direction: column; gap: 8px">
+            <span style="font-size: 11px; font-weight: 700; letter-spacing: 1.5px; color: #A3161C">SPRING · [YEAR]</span>
+            <h3 style="margin: 0; font-family: 'Unbounded', 'Manrope', sans-serif; font-weight: 700; font-size: 18px">Nooruz Celebration</h3>
+            <p style="margin: 0; font-size: 14px; line-height: 1.6">Our biggest night: 200+ guests from four universities, with Rowan’s president and Kyrgyz UN representatives in attendance.</p>
+          </div>
+        </div>
+        <div style="flex: 1 1 280px; box-sizing: border-box; background: #F3E8D8; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column">
+          <div style="height: 240px; background: #C9A585; display: flex; align-items: center; justify-content: center; color: #4A1A14; font-size: 12px; font-weight: 500">Event photo</div>
+          <div style="padding: 20px; display: flex; flex-direction: column; gap: 8px">
+            <span style="font-size: 11px; font-weight: 700; letter-spacing: 1.5px; color: #A3161C">FALL · 2026</span>
+            <h3 style="margin: 0; font-family: 'Unbounded', 'Manrope', sans-serif; font-weight: 700; font-size: 18px">Welcome Freshmen</h3>
+            <p style="margin: 0; font-size: 14px; line-height: 1.6">A welcome night for new students — club intro, a Rowan survival guide and practical tips for life in America.</p>
+          </div>
+        </div>
+        <div style="flex: 1 1 280px; box-sizing: border-box; background: #F3E8D8; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column">
+          <div style="height: 240px; background: #7D0E12; display: flex; align-items: center; justify-content: center; color: #FBF3E8; font-size: 12px; font-weight: 500">Event photo</div>
+          <div style="padding: 20px; display: flex; flex-direction: column; gap: 8px">
+            <span style="font-size: 11px; font-weight: 700; letter-spacing: 1.5px; color: #A3161C">[DATE]</span>
+            <h3 style="margin: 0; font-family: 'Unbounded', 'Manrope', sans-serif; font-weight: 700; font-size: 18px">[EVENT NAME]</h3>
+            <p style="margin: 0; font-size: 14px; line-height: 1.6">[Short description of the event.]</p>
+          </div>
         </div>
       </div>
     </div>
@@ -306,26 +342,17 @@ a:focus-visible{outline:2px solid #2A1A14;outline-offset:3px}
 </div>
 <script>
 (function () {
-  var root = document.documentElement;
-  var site = document.getElementById('site');
-  function show(id) {
+  function route() {
+    var id = location.hash.slice(1);
     var el = id ? document.getElementById(id) : null;
-    var isSite = id === 'site' || !!(el && site.contains(el));
-    root.setAttribute('data-view', isSite ? 'site' : 'links');
-    if (isSite && el && id !== 'site') { el.scrollIntoView(); }
+    var site = document.getElementById('site');
+    var isSite = id === 'site' || !!(el && site && site.contains(el));
+    document.documentElement.setAttribute('data-view', isSite ? 'site' : 'links');
+    if (isSite && el) { setTimeout(function () { el.scrollIntoView(); }, 0); }
     else { window.scrollTo(0, 0); }
   }
-  document.addEventListener('click', function (e) {
-    var a = e.target.closest ? e.target.closest('a[href^="#"]') : null;
-    if (!a) return;
-    var h = a.getAttribute('href');
-    e.preventDefault();
-    if (!h || h.length < 2) return;
-    show(h.slice(1));
-    try { history.replaceState(null, '', h); } catch (err) {}
-  });
-  window.addEventListener('hashchange', function () { show(location.hash.slice(1)); });
-  show(location.hash.slice(1));
+  window.addEventListener('hashchange', route);
+  route();
 })();
 </script>
 </body>
