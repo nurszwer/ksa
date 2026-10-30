@@ -2,7 +2,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kyrgyz Student Association — Rowan University</title>
+<title>Kyrgyz Students Association — Rowan University</title>
 <meta name="description" content="KSA brings together Kyrgyz students at Rowan and everyone curious about Kyrgyzstan.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -72,7 +72,7 @@ a:focus-visible{outline:2px solid #2A1A14;outline-offset:3px}
     <div style="box-sizing: border-box; max-width: 1100px; margin: 0 auto; padding: 64px clamp(20px, 8.4vw, 72px) 72px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 40px">
       <div style="flex: 1 1 480px; display: flex; flex-direction: column; gap: 22px; min-width: 0">
         <span style="font-size: 12px; font-weight: 700; letter-spacing: 2px; color: #F2B134">ABOUT THE CLUB · ROWAN UNIVERSITY</span>
-        <h1 style="margin: 0; font-family: 'Unbounded', 'Manrope', sans-serif; font-weight: 800; font-size: clamp(34px, 6.4vw, 60px); line-height: 1.05; color: #FBF3E8">Kyrgyz Student Association</h1>
+        <h1 style="margin: 0; font-family: 'Unbounded', 'Manrope', sans-serif; font-weight: 800; font-size: clamp(34px, 6.4vw, 60px); line-height: 1.05; color: #FBF3E8">Kyrgyz Students Association</h1>
         <p style="margin: 0; font-size: 16px; line-height: 1.65; color: #FBF3E8; max-width: 340px">KSA brings together Kyrgyz students at Rowan and everyone curious about Kyrgyzstan. We celebrate our holidays, share our food and music, and help new students settle into life at Rowan and in America. Open to all majors and backgrounds.</p>
         <div style="display: flex; flex-wrap: wrap; gap: 12px">
           <a class="bt" href="https://rowan.campuslabs.com/engage/organization/ksa" target="_blank" rel="noopener noreferrer" style="background: #FBF3E8; color: #2A1A14; font-weight: 700; font-size: 14px; padding: 14px 24px; border-radius: 999px">Kyrgyz Students Association</a>
@@ -303,7 +303,7 @@ a:focus-visible{outline:2px solid #2A1A14;outline-offset:3px}
   <!-- FOOTER -->
   <div style="box-sizing: border-box; width: 100%; background: #F3E8D8; border-top: 1px solid #E3CFB4">
     <div style="box-sizing: border-box; max-width: 1100px; margin: 0 auto; padding: 22px clamp(20px, 8.4vw, 72px); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 16px; font-size: 12px; color: #5A4438">
-      <span>Kyrgyz Student Association · Rowan University</span>
+      <span>Kyrgyz Students Association · Rowan University</span>
       <a href="https://www.instagram.com/ksa.rowan/" target="_blank" rel="noopener noreferrer" style="color: #A3161C; font-weight: 600; text-decoration: underline">Instagram</a>
     </div>
   </div>
@@ -325,7 +325,7 @@ a:focus-visible{outline:2px solid #2A1A14;outline-offset:3px}
   </svg>
   <div class="txt">
     <span class="eyebrow">ROWAN UNIVERSITY</span>
-    <h1>Kyrgyz Student Association</h1>
+    <h1>Kyrgyz Students Association</h1>
     <p>Kyrgyz culture, food and community at Rowan. Open to all majors and backgrounds.</p>
   </div>
 </header>
@@ -357,7 +357,7 @@ a:focus-visible{outline:2px solid #2A1A14;outline-offset:3px}
     <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#A3161C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
   </a>
 
-  <p class="foot">Kyrgyz Student Association · Rowan University</p>
+  <p class="foot">Kyrgyz Students Association · Rowan University</p>
 
 </main>
 </div>
