@@ -325,7 +325,7 @@ a:focus-visible{outline:2px solid #2A1A14;outline-offset:3px}
   </svg>
   <div class="txt">
     <span class="eyebrow">ROWAN UNIVERSITY</span>
-    <h1>Kyrgyz Student Association</h1>
+    <h1>Kyrgyz Students Association</h1>
     <p>Kyrgyz culture, food and community at Rowan. Open to all majors and backgrounds.</p>
   </div>
 </header>
