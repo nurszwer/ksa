@@ -75,8 +75,8 @@ a:focus-visible{outline:2px solid #2A1A14;outline-offset:3px}
         <h1 style="margin: 0; font-family: 'Unbounded', 'Manrope', sans-serif; font-weight: 800; font-size: clamp(34px, 6.4vw, 60px); line-height: 1.05; color: #FBF3E8">Kyrgyz Student Association</h1>
         <p style="margin: 0; font-size: 16px; line-height: 1.65; color: #FBF3E8; max-width: 340px">KSA brings together Kyrgyz students at Rowan and everyone curious about Kyrgyzstan. We celebrate our holidays, share our food and music, and help new students settle into life at Rowan and in America. Open to all majors and backgrounds.</p>
         <div style="display: flex; flex-wrap: wrap; gap: 12px">
-          <a class="bt" href="#" style="background: #FBF3E8; color: #2A1A14; font-weight: 700; font-size: 14px; padding: 14px clamp(20px, 8.4vw, 72px); border-radius: 999px">Join KSA on ProfLink</a>
-          <a class="bt" href="#upcoming" style="border: 1px solid #F2B134; color: #FBF3E8; font-weight: 600; font-size: 14px; padding: 13px clamp(20px, 8.4vw, 72px); border-radius: 999px">Upcoming events</a>
+          <a class="bt" href="https://rowan.campuslabs.com/engage/organization/ksa" target="_blank" rel="noopener noreferrer" style="background: #FBF3E8; color: #2A1A14; font-weight: 700; font-size: 14px; padding: 14px 24px; border-radius: 999px">Kyrgyz Students Association</a>
+          <a class="bt" href="#upcoming" style="border: 1px solid #F2B134; color: #FBF3E8; font-weight: 600; font-size: 14px; padding: 13px 24px; border-radius: 999px">Upcoming events</a>
         </div>
       </div>
       <div style="flex: 0 1 260px; display: flex; justify-content: center">
@@ -295,7 +295,7 @@ a:focus-visible{outline:2px solid #2A1A14;outline-offset:3px}
           <h2 style="margin: 0; font-family: 'Unbounded', 'Manrope', sans-serif; font-weight: 800; font-size: clamp(26px, 4.5vw, 40px); color: #FBF3E8">Become a member</h2>
           <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #F6E4D3">Join KSA on ProfLink to get event updates and be part of the community.</p>
         </div>
-        <a class="bt" href="#" style="background: #FBF3E8; color: #2A1A14; font-weight: 700; font-size: 14px; padding: 14px 26px; border-radius: 999px">Join on ProfLink</a>
+        <a class="bt" href="https://rowan.campuslabs.com/engage/organization/ksa" target="_blank" rel="noopener noreferrer" style="background: #FBF3E8; color: #2A1A14; font-weight: 700; font-size: 14px; padding: 14px 26px; border-radius: 999px">Kyrgyz Students Association</a>
       </div>
     </div>
   </div>
@@ -325,14 +325,14 @@ a:focus-visible{outline:2px solid #2A1A14;outline-offset:3px}
   </svg>
   <div class="txt">
     <span class="eyebrow">ROWAN UNIVERSITY</span>
-    <h1>Kyrgyz Students Association</h1>
+    <h1>Kyrgyz Student Association</h1>
     <p>Kyrgyz culture, food and community at Rowan. Open to all majors and backgrounds.</p>
   </div>
 </header>
 <main class="list">
 
-  <a class="lk main" href="#">
-    <span>Join KSA on ProfLink</span>
+  <a class="lk main" href="https://rowan.campuslabs.com/engage/organization/ksa" target="_blank" rel="noopener noreferrer">
+    <span>Kyrgyz Students Association</span>
     <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
   </a>
 
