@@ -68,7 +68,7 @@ a:focus-visible{outline:2px solid #2A1A14;outline-offset:3px}
   </div>
 
   <!-- HERO -->
-  <div id="top" style="box-sizing: border-box; width: 100%; background: #A3161C">
+  <div id="top" style="box-sizing: border-box; width: 100%; background: #A3161C; border-radius: 0 0 32px 32px">
     <div style="box-sizing: border-box; max-width: 1100px; margin: 0 auto; padding: 64px clamp(20px, 8.4vw, 72px) 72px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 40px">
       <div style="flex: 1 1 480px; display: flex; flex-direction: column; gap: 22px; min-width: 0">
         <span style="font-size: 12px; font-weight: 700; letter-spacing: 2px; color: #F2B134">ABOUT THE CLUB · ROWAN UNIVERSITY</span>
@@ -108,7 +108,7 @@ a:focus-visible{outline:2px solid #2A1A14;outline-offset:3px}
   </div>
 
   <!-- UPCOMING / CALENDAR -->
-  <div id="upcoming" style="box-sizing: border-box; width: 100%; background: #7D0E12">
+  <div id="upcoming" style="box-sizing: border-box; width: 100%; background: #7D0E12; border-radius: 32px; margin-top: -32px; position: relative">
     <div style="box-sizing: border-box; max-width: 1100px; margin: 0 auto; padding: 64px clamp(20px, 8.4vw, 72px); display: flex; flex-direction: column; gap: 14px">
       <span style="font-size: 12px; font-weight: 700; letter-spacing: 2px; color: #F2B134">COMING UP</span>
       <h2 style="margin: 0 0 12px; font-family: 'Unbounded', 'Manrope', sans-serif; font-weight: 800; font-size: clamp(28px, 5vw, 42px); color: #FBF3E8">Upcoming events</h2>
